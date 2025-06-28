@@ -40,6 +40,15 @@ h1 {
     font-weight: 500;
 }
 
+.footer {
+    text-align: center;
+    font-size: 0.5em;
+    margin-top: 24px;
+    padding: 5px 20px;    
+    color: #126275;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
 .pregunta {
     font-size: 1.2em;
     margin-bottom: 24px;
