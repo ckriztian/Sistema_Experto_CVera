@@ -29,7 +29,7 @@ source venv/bin/activate
 ### Archivos principales
 
 - **app.py** – Archivo principal con la API FastAPI.
-- **compuestos.json** (o `compuestos_descartes.json`) – Base de conocimiento de compuestos.
+- **compuestos.json** – Base de conocimiento de compuestos.
 - **index.html** – Interfaz web (opcional).
 - **style.css** – Hoja de estilos (opcional).
 
@@ -76,4 +76,4 @@ Para dudas o sugerencias, contacta a Cristian Vera.
 
 ---
 
-*Desarrollado para la Tecnicatura en Ciencia de Datos e IA – Politécnico Malvinas Argentinas, 2024.*
+*Desarrollado por Cristian Vera – 2025 – Politécnico Malvinas Argentinas*
