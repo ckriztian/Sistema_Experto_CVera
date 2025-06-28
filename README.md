@@ -35,7 +35,7 @@ La base de conocimiento fue diseñada junto a la Técnica Universitaria Química
 2. Abre `index.html` en tu navegador preferido.
 3. Responde las preguntas y descubre cómo descartar tu compuesto químico de forma segura.
 ___
-### [Instrucciones para Ejecutar la API](/docs/README.md)
+### [Instrucciones para Ejecutar la API (backend)](/docs/README.md)
 ___
 
 ### Para más detalles del Sistema Experto:
