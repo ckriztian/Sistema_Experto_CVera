@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Experto Químico - Cristian Vera</title>
+    <link rel="stylesheet" href="rss/styles.css">
+    <link rel="icon" type="image/png" href="img/logo_politecnicol.png">
+</head>
+<body>
+    <img src="img/logo_politecnicol.png" class="logo" alt="Logo Politécnico Malvinas Argentinas">
+    <div class="card">
+        <h1>Sistema Experto Químico</h1>
+        <div class="subtitulo">¿Cómo descartar tu compuesto?</div>
+        <div class="pregunta" id="pregunta"></div>
+        <button class="boton" onclick="responder(true)">Sí</button>
+        <button class="boton" onclick="responder(false)">No</button>
+        <button class="boton" style="background:#aaa" onclick="reiniciar()">Reiniciar</button>
+        <div class="res" id="resultado"></div>
+        <div class="historial" id="historial">
+            <b>Historial de la consulta</b>
+            <ul id="historial-lista"></ul>
+        </div>
+    </div>
+<script>
+let propActual = "";
+
+async function cargarPregunta() {
+    const res = await fetch("http://localhost:8000/pregunta");
+    const data = await res.json();
+
+    if (data.pregunta) {
+        document.getElementById("pregunta").innerText = `¿${data.pregunta}?`;
+        propActual = data.pregunta;
+        document.getElementById("resultado").innerText = "";
+    } else if (data.name) {
+        document.getElementById("pregunta").innerText = "Resultado:";
+        document.getElementById("resultado").innerHTML = `<b>${data.name}</b><br>${data.description}<br><br><i>Coincidió con: ${data.props.join(", ")}</i>`;
+        propActual = "";
+    } else {
+        document.getElementById("pregunta").innerText = "No se pudo identificar el compuesto.";
+        document.getElementById("resultado").innerText = "";
+    }
+    mostrarHistorial();
+}
+
+async function responder(resp) {
+    if (!propActual) return;
+    await fetch("http://localhost:8000/respuesta?prop=" + encodeURIComponent(propActual) + "&respuesta=" + resp, { method: "POST" });
+    cargarPregunta();
+}
+
+async function reiniciar() {
+    await fetch("http://localhost:8000/reiniciar");
+    cargarPregunta();
+}
+
+async function mostrarHistorial() {
+    const res = await fetch("http://localhost:8000/historial");
+    const historial = await res.json();
+    const ul = document.getElementById("historial-lista");
+    ul.innerHTML = "";
+    if (historial.length === 0) {
+        ul.innerHTML = "<li style='color:#aaa;'>(Sin historial aún)</li>";
+    } else {
+        historial.forEach(item => {
+            ul.innerHTML += `<li>${item.pregunta}: <span class="${item.respuesta ? "respuesta-si" : "respuesta-no"}">${item.respuesta ? "Sí" : "No"}</span></li>`;
+        });
+    }
+}
+
+window.onload = cargarPregunta;
+</script>
+</body>
+</html>
+
+

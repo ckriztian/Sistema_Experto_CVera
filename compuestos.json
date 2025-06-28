@@ -1,0 +1,548 @@
+{
+  "__v": 1,
+  "description": "Base de conocimiento Química. Contiene información sobre compuestos químicos, sus propiedades y recomendaciones de manejo y descarte.",
+  "entries": [
+    {
+      "name": "Cloruro de sodio",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es sal",
+        "Es soluble en agua",
+        "Es inorgánico",
+        "Es nutriente esencial"
+      ]
+    },
+    {
+      "name": "Ácido sulfúrico",
+      "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es ácido",
+        "Es tóxico",
+        "Es corrosivo",
+        "Produce vapores irritantes",
+        "Es inorgánico",
+        "Es reactivo con metales"
+      ]
+    },
+    {
+      "name": "Etanol",
+      "description": "Descartar en envase cerrado y etiquetado, llevar a repositorio de residuos inflamables. En caso de incendio, llamar a Bomberos (100). En caso de intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es inflamable",
+        "Es orgánico",
+        "Es volátil",
+        "Se utiliza como solvente"
+      ]
+    },
+    {
+      "name": "Amoníaco",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es gas",
+        "Es tóxico",
+        "Es corrosivo",
+        "Es volátil",
+        "Produce vapores irritantes",
+        "Es inorgánico",
+        "Es reactivo con ácidos",
+        "Es soluble en agua"
+      ]
+    },
+    {
+      "name": "Peróxido de hidrógeno",
+      "description": "Descartar en recipiente resistente y bien etiquetado. Llevar a repositorio de residuos peligrosos (oxidantes). En caso de accidente, contactar a materiales peligrosos (103).",
+      "props": [
+        "Es líquido",
+        "Es oxidante",
+        "Es tóxico",
+        "Es corrosivo",
+        "Es inorgánico",
+        "Se utiliza como desinfectante",
+        "Es inestable a la luz"
+      ]
+    },
+    {
+      "name": "Sodio metálico",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es sólido",
+        "Es metal",
+        "Es reactivo con agua",
+        "Es explosivo",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Mercurio",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es metal",
+        "Es tóxico",
+        "Es volátil",
+        "Es inorgánico",
+        "Es persistente en el ambiente"
+      ]
+    },
+    {
+      "name": "Acetona",
+      "description": "Descartar en envase cerrado y etiquetado, llevar a repositorio de residuos inflamables. En caso de incendio, llamar a Bomberos (100). En caso de intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es inflamable",
+        "Es volátil",
+        "Es orgánico",
+        "Se utiliza como solvente"
+      ]
+    },
+    {
+      "name": "Ácido acético",
+      "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es ácido",
+        "Es orgánico",
+        "Es corrosivo",
+        "Es volátil"
+      ]
+    },
+    {
+      "name": "Benceno",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es inflamable",
+        "Es volátil",
+        "Es tóxico",
+        "Es orgánico",
+        "Es cancerígeno"
+      ]
+    },
+    {
+      "name": "Ácido clorhídrico",
+      "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es ácido",
+        "Es corrosivo",
+        "Es tóxico",
+        "Produce vapores irritantes",
+        "Es inorgánico",
+        "Es reactivo con metales"
+      ]
+    },
+    {
+      "name": "Nitrato de plata",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es sólido",
+        "Es sal",
+        "Es oxidante",
+        "Es tóxico",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Cloro gaseoso",
+      "description": "Descartar en recipiente resistente y bien etiquetado. Llevar a repositorio de residuos peligrosos (oxidantes). En caso de accidente, contactar a materiales peligrosos (103).",
+      "props": [
+        "Es gas",
+        "Es tóxico",
+        "Es oxidante",
+        "Es corrosivo",
+        "Produce vapores irritantes",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Metanol",
+      "description": "Descartar en envase cerrado y etiquetado, llevar a repositorio de residuos inflamables. En caso de incendio, llamar a Bomberos (100). En caso de intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es inflamable",
+        "Es tóxico",
+        "Es volátil",
+        "Es orgánico",
+        "Se utiliza como solvente"
+      ]
+    },
+    {
+      "name": "Amonio cuaternario",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es tóxico",
+        "Se utiliza como desinfectante",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Fosfato de potasio",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es sal",
+        "Es inorgánico",
+        "Se utiliza como fertilizante"
+      ]
+    },
+    {
+      "name": "Ácido nítrico",
+      "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es ácido",
+        "Es corrosivo",
+        "Es oxidante",
+        "Es tóxico",
+        "Produce vapores irritantes",
+        "Es inorgánico",
+        "Es reactivo con agua",
+        "Es reactivo con metales"
+      ]
+    },
+    {
+      "name": "Bromuro de sodio",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es sal",
+        "Es soluble en agua",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Ácido oxálico",
+      "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es sólido",
+        "Es ácido",
+        "Es tóxico",
+        "Es corrosivo",
+        "Es orgánico"
+      ]
+    },
+    {
+      "name": "Tetracloruro de carbono",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es tóxico",
+        "Es volátil",
+        "Es orgánico"
+      ]
+    },
+    {
+      "name": "Cloroformo",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es tóxico",
+        "Es volátil",
+        "Es orgánico"
+      ]
+    },
+    {
+      "name": "Dióxido de azufre",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es gas",
+        "Es tóxico",
+        "Es corrosivo",
+        "Es soluble en agua",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Óxido de zinc",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Uranio",
+      "description": "Descartar como residuo radiactivo en contenedor autorizado. En caso de incidente nuclear, contactar a la línea 0800-666-6293.",
+      "props": [
+        "Es sólido",
+        "Es metal",
+        "Es radiactivo",
+        "Es tóxico",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Plomo",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es sólido",
+        "Es metal",
+        "Es tóxico",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Yodo",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es sólido",
+        "Es volátil",
+        "Es no metal"
+      ]
+    },
+    {
+      "name": "Sulfato de cobre",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es sólido",
+        "Es sal",
+        "Es tóxico",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Fósforo blanco",
+      "description": "Descartar en envase cerrado y etiquetado, llevar a repositorio de residuos inflamables. En caso de incendio, llamar a Bomberos (100). En caso de intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es sólido",
+        "Es reactivo con aire",
+        "Es inflamable",
+        "Es corrosivo",
+        "Es tóxico",
+        "Es no metal"
+      ]
+    },
+    {
+      "name": "Ácido fórmico",
+      "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es ácido",
+        "Es tóxico",
+        "Es corrosivo",
+        "Es orgánico"
+      ]
+    },
+    {
+      "name": "Nitrato de sodio",
+      "description": "Descartar en recipiente resistente y bien etiquetado. Llevar a repositorio de residuos peligrosos (oxidantes). En caso de accidente, contactar a materiales peligrosos (103).",
+      "props": [
+        "Es sólido",
+        "Es sal",
+        "Es oxidante",
+        "Es soluble en agua",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Ácido perclórico",
+      "description": "Descartar en recipiente resistente y bien etiquetado. Llevar a repositorio de residuos peligrosos (oxidantes). En caso de accidente, contactar a materiales peligrosos (103).",
+      "props": [
+        "Es líquido",
+        "Es ácido",
+        "Es oxidante",
+        "Es corrosivo",
+        "Es inorgánico",
+        "Es reactivo con metales"
+      ]
+    },
+    {
+      "name": "Cobre",
+      "description": "Reciclar o entregar a gestor autorizado de metales. No requiere contacto de emergencia salvo incidente ambiental.",
+      "props": [
+        "Es sólido",
+        "Es metal",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Ácido bórico",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es ácido",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Clorato de potasio",
+      "description": "Descartar en recipiente resistente y bien etiquetado. Llevar a repositorio de residuos peligrosos (oxidantes). En caso de accidente, contactar a materiales peligrosos (103).",
+      "props": [
+        "Es sólido",
+        "Es sal",
+        "Es oxidante",
+        "Es explosivo",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Nitrato de amonio",
+      "description": "Descartar en recipiente resistente y bien etiquetado. Llevar a repositorio de residuos peligrosos (oxidantes). En caso de accidente, contactar a materiales peligrosos (103).",
+      "props": [
+        "Es sólido",
+        "Es sal",
+        "Es oxidante",
+        "Es explosivo",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Ácido benzoico",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es ácido",
+        "Es orgánico",
+        "Se utiliza como conservante"
+      ]
+    },
+    {
+      "name": "Óxido de etileno",
+      "description": "Descartar en envase cerrado y etiquetado, llevar a repositorio de residuos inflamables. En caso de incendio, llamar a Bomberos (100). En caso de intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es gas",
+        "Es inflamable",
+        "Es tóxico",
+        "Es orgánico",
+        "Se utiliza como desinfectante"
+      ]
+    },
+    {
+      "name": "Flúor",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es gas",
+        "Es tóxico",
+        "Es oxidante",
+        "Es corrosivo",
+        "Produce vapores irritantes",
+        "Es no metal"
+      ]
+    },
+    {
+      "name": "Óxido de calcio",
+      "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es sólido",
+        "Es corrosivo",
+        "Es reactivo con agua",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Carbonato de sodio",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es sal",
+        "Es base",
+        "Es soluble en agua",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Nitrógeno",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es gas",
+        "Es inorgánico"
+      ]
+    },
+    {
+      "name": "Propano",
+      "description": "Descartar en envase cerrado y etiquetado, llevar a repositorio de residuos inflamables. En caso de incendio, llamar a Bomberos (100). En caso de intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es gas",
+        "Es inflamable",
+        "Es orgánico"
+      ]
+    },
+    {
+      "name": "Formaldehído",
+      "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es gas",
+        "Es tóxico",
+        "Es cancerígeno",
+        "Produce vapores irritantes",
+        "Es orgánico"
+      ]
+    },
+    {
+      "name": "Ácido cítrico",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es ácido",
+        "Es orgánico",
+        "Se utiliza en alimentos"
+      ]
+    },
+    {
+      "name": "Hexano",
+      "description": "Descartar en envase cerrado y etiquetado, llevar a repositorio de residuos inflamables. En caso de incendio, llamar a Bomberos (100). En caso de intoxicación, Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es inflamable",
+        "Es orgánico",
+        "Es volátil",
+        "Se utiliza como solvente"
+      ]
+    },
+    {
+      "name": "Ácido láctico",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es líquido",
+        "Es ácido",
+        "Es orgánico"
+      ]
+    },
+    {
+      "name": "Glucosa",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es carbohidrato",
+        "Es orgánico",
+        "Es nutriente esencial"
+      ]
+    },
+    {
+      "name": "Ácido ascórbico",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es ácido",
+        "Es orgánico",
+        "Es nutriente esencial"
+      ]
+    },
+    {
+      "name": "Acetato de sodio",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es sal",
+        "Es orgánico",
+        "Es soluble en agua"
+      ]
+    },
+    {
+      "name": "Ácido tartárico",
+      "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
+      "props": [
+        "Es sólido",
+        "Es ácido",
+        "Es orgánico",
+        "Se utiliza en alimentos",
+        "Es carbohidrato"
+      ]
+    }
+  ]
+}
