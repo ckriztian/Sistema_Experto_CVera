@@ -27,13 +27,24 @@ Guiar a los usuarios en la correcta identificación de compuestos químicos y el
 
 ### Conocimiento experto
 
-La base de conocimiento fue diseñada junto a una Ingeniera Química, siguiendo la normativa nacional y provincial (Ley 24.051 y regulaciones de TDF).
+La base de conocimiento fue diseñada junto a la Técnica Universitaria Química, Melisa Córdoba, siguiendo la normativa nacional y provincial (Ley 24.051 y regulaciones de TDF).
 
 ### Uso
 
 1. Ejecuta el backend:
 2. Abre `index.html` en tu navegador preferido.
 3. Responde las preguntas y descubre cómo descartar tu compuesto químico de forma segura.
+___
+### [Instrucciones para Ejecutar la API](/docs/README.md)
+___
+
+### Para más detalles del Sistema Experto:
+
+### [Descripción del Proyecto del Sistema Experto](/docs/Entrega%201.pdf)
+### [Organización del Conocimiento en el Sistema Experto](/docs/Entrega%202.pdf)
+---
+### [Link del video - presentación](/video/readme.md)
+---
 
 ### 📁 Estructura del proyecto
 
