@@ -53,13 +53,14 @@ ___
 
 ```
 ├── /docs/              # Documentos del sistema
-├── /rss/               # Recursos y estilos del frontend
 ├── /img/               # Logos e imágenes del sistema
-├── /app.py             # API principal FastAPI (backend)
-├── /compuestos.json    # Base de conocimiento de compuestos y propiedades
-├── /index.html         # Interfaz web del usuario
-├── /style.css          # Hoja de estilos moderna y accesible
+├── /rss/               # Recursos y estilos del frontend
+├── /video/             # Video presentación
 ├── /README.md          # Descripción general del sistema
+├── /app.py             # API principal FastAPI (backend)
+├── /compuestos.json    # Base de conocimiento 
+├── /index.html         # Interfaz web del usuario
+
 ```
 ---
 
