@@ -46,7 +46,7 @@ ___
 
 ---
 
-### 🎥 [Link del video - presentación](/video/readme.md)
+### 🎥 [Link del video - presentación](/video/README.md)
 ---
 
 ### 📁 Estructura del proyecto
