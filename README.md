@@ -10,32 +10,32 @@ Alumno y desarrollador: **Cristian E. Vera Quijano**
 
 ---
 
-## Descripción
+### Descripción
 
 Este repositorio contiene el código y la documentación del sistema experto para la identificación y descarte seguro de compuestos químicos en laboratorios, desarrollado en el contexto de la Tecnicatura en Ciencia de Datos e Inteligencia Artificial – Politécnico Malvinas Argentinas.
 
-## Objetivo
+### Objetivo
 
 Guiar a los usuarios en la correcta identificación de compuestos químicos y el procedimiento seguro de descarte, cumpliendo con las regulaciones de Tierra del Fuego y promoviendo la seguridad y el cuidado ambiental.
 
-## ¿Cómo funciona?
+### ¿Cómo funciona?
 
 - El sistema realiza preguntas sobre las propiedades del compuesto.
 - Filtra posibles compuestos de la base de conocimiento.
 - Una vez identificado, muestra el nombre, procedimiento de descarte y contactos de emergencia.
 - Se puede reiniciar la consulta en cualquier momento.
 
-## Conocimiento experto
+### Conocimiento experto
 
 La base de conocimiento fue diseñada junto a una Ingeniera Química, siguiendo la normativa nacional y provincial (Ley 24.051 y regulaciones de TDF).
 
-## Uso
+### Uso
 
 1. Ejecuta el backend:
 2. Abre `index.html` en tu navegador preferido.
 3. Responde las preguntas y descubre cómo descartar tu compuesto químico de forma segura.
 
-## 📁 Estructura del proyecto
+### 📁 Estructura del proyecto
 
 ```
 ├── /docs/              # Documentos del sistema
