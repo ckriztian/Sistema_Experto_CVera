@@ -1,14 +1,18 @@
-## Instrucciones para Ejecutar la API del Sistema Experto Químico
+## ⚗️🚦 Instrucciones para Ejecutar la API del Sistema Experto Químico
 
 Este repositorio contiene la API backend del Sistema Experto para identificación y descarte seguro de compuestos químicos en laboratorios.
 
-### Requisitos
+---
+
+### 🧰 Requisitos
 
 - **Python 3.8+**
 - **pip** (gestor de paquetes de Python)
 - Se recomienda entorno virtual (`venv`)
 
-### Instalación de dependencias
+---
+
+### 📦 Instalación de dependencias
 
 Desde la terminal, navega a la carpeta del proyecto y ejecuta:
 
@@ -26,14 +30,18 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### Archivos principales
+---
+
+### 📁 Archivos principales
 
 - **app.py** – Archivo principal con la API FastAPI.
 - **compuestos.json** – Base de conocimiento de compuestos.
 - **index.html** – Interfaz web (opcional).
 - **style.css** – Hoja de estilos (opcional).
 
-### Ejecución de la API
+---
+
+### 🚀 Ejecución de la API
 
 1. **Asegúrate de estar en el directorio correcto y tener las dependencias instaladas.**
 2. Ejecuta el siguiente comando en la terminal:
@@ -44,7 +52,9 @@ uvicorn app:app --reload
 
 Esto iniciará el servidor en modo desarrollo.
 
-### Acceso a la API
+---
+
+### 🌐 Acceso a la API
 
 - **Documentación interactiva (Swagger UI):**
   - [http://localhost:8000/docs](http://localhost:8000/docs)
@@ -59,18 +69,24 @@ Esto iniciará el servidor en modo desarrollo.
 - **Ver historial de la consulta:**
   - `GET http://localhost:8000/historial`
 
-### Uso con la interfaz web
+---
+
+### 💻 Uso con la interfaz web
 
 1. Abre `index.html` en tu navegador preferido.
 2. Asegúrate de que la API esté corriendo en `localhost:8000`.
 3. Responde las preguntas y consulta el resultado.
 
-### Notas
+---
+
+### ℹ️ Notas
 
 - Si cambias la base de conocimiento (`compuestos.json`), reinicia el servidor para recargar datos.
 - Puedes modificar `style.css` o las imágenes para personalizar la interfaz.
 
-### Soporte
+---
+
+### 🆘 Soporte
 
 Para dudas o sugerencias, contacta a Cristian Vera.
 
