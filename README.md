@@ -60,7 +60,6 @@ ___
 ├── /app.py             # API principal FastAPI (backend)
 ├── /compuestos.json    # Base de conocimiento 
 ├── /index.html         # Interfaz web del usuario
-
 ```
 ---
 
