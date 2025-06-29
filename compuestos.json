@@ -126,6 +126,7 @@
       "name": "Ácido clorhídrico",
       "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
       "props": [
+        "Es sólido",
         "Es ácido",
         "Es corrosivo",
         "Es tóxico",
@@ -262,7 +263,9 @@
       "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
       "props": [
         "Es sólido",
-        "Es inorgánico"
+        "Es inorgánico",
+        "Es oxidante",
+        "Es soluble en agua"
       ]
     },
     {
@@ -292,7 +295,8 @@
       "props": [
         "Es sólido",
         "Es volátil",
-        "Es no metal"
+        "Es no metal",
+        "Es emulsificante"
       ]
     },
     {
@@ -357,7 +361,8 @@
       "props": [
         "Es sólido",
         "Es metal",
-        "Es inorgánico"
+        "Es inorgánico",
+        "Es dieléctrico"
       ]
     },
     {
@@ -366,7 +371,8 @@
       "props": [
         "Es sólido",
         "Es ácido",
-        "Es inorgánico"
+        "Es inorgánico",
+        "Es biodegradable"
       ]
     },
     {
@@ -441,7 +447,7 @@
       "props": [
         "Es sólido",
         "Es sal",
-        "Es base",
+        "Tiene propiedades detergentes",
         "Es soluble en agua",
         "Es inorgánico"
       ]
@@ -451,7 +457,9 @@
       "description": "Descartar en repositorio de residuos comunes. No requiere gestión especial ni contacto de emergencia.",
       "props": [
         "Es gas",
-        "Es inorgánico"
+        "Es inorgánico",
+        "Es cristalino",
+        "Es electronegativo"
       ]
     },
     {
@@ -460,14 +468,14 @@
       "props": [
         "Es gas",
         "Es inflamable",
-        "Es orgánico"
+        "Es orgánico",
+        "Es agente quelante"
       ]
     },
     {
       "name": "Formaldehído",
       "description": "Descartar en envase seguro, entregar a repositorio de residuos peligrosos tóxicos. En caso de contacto o intoxicación, Centro Toxicológico (0800-222-5462).",
       "props": [
-        "Es líquido",
         "Es gas",
         "Es tóxico",
         "Es cancerígeno",
@@ -482,13 +490,15 @@
         "Es sólido",
         "Es ácido",
         "Es orgánico",
-        "Se utiliza en alimentos"
+        "Se utiliza en alimentos",
+        "Es biodegradable"
       ]
     },
     {
       "name": "Hexano",
       "description": "Descartar en envase cerrado y etiquetado, llevar a repositorio de residuos inflamables. En caso de incendio, llamar a Bomberos (100). En caso de intoxicación, Centro Toxicológico (0800-222-5462).",
       "props": [
+        "Es sólido",
         "Es inflamable",
         "Es orgánico",
         "Es volátil",
@@ -502,7 +512,8 @@
       "props": [
         "Es líquido",
         "Es ácido",
-        "Es orgánico"
+        "Es orgánico",
+        "Es agente tamponante"
       ]
     },
     {
@@ -543,7 +554,8 @@
         "Es ácido",
         "Es orgánico",
         "Se utiliza en alimentos",
-        "Es carbohidrato"
+        "Es carbohidrato",
+        "Es biodegradable"
       ]
     }
   ]
