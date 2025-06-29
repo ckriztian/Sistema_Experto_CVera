@@ -60,6 +60,7 @@ class Consulta:
             return None
         else:
             return None
+                
 
 # Guardar consulta activa en memoria (para demo simple, 1 usuario a la vez)
 consulta = Consulta()

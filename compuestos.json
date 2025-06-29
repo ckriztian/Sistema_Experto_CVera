@@ -23,7 +23,8 @@
         "Es corrosivo",
         "Produce vapores irritantes",
         "Es inorgánico",
-        "Es reactivo con metales"
+        "Es reactivo con metales",
+        "Es soluble en agua"
       ]
     },
     {
@@ -95,7 +96,7 @@
         "Es inflamable",
         "Es volátil",
         "Es orgánico",
-        "Se utiliza como solvente"
+        "Es corrosivo"
       ]
     },
     {
@@ -125,13 +126,13 @@
       "name": "Ácido clorhídrico",
       "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
       "props": [
-        "Es líquido",
         "Es ácido",
         "Es corrosivo",
         "Es tóxico",
         "Produce vapores irritantes",
         "Es inorgánico",
-        "Es reactivo con metales"
+        "Es reactivo con metales",
+        "Es soluble en agua"
       ]
     },
     {
@@ -242,7 +243,7 @@
         "Es líquido",
         "Es tóxico",
         "Es volátil",
-        "Es orgánico"
+        "Produce vapores irritantes"
       ]
     },
     {
@@ -386,8 +387,9 @@
         "Es sólido",
         "Es sal",
         "Es oxidante",
-        "Es explosivo",
-        "Es inorgánico"
+        "Es inorgánico",
+        "Es tóxico",
+        "Se utiliza como fertilizante"
       ]
     },
     {
@@ -487,11 +489,11 @@
       "name": "Hexano",
       "description": "Descartar en envase cerrado y etiquetado, llevar a repositorio de residuos inflamables. En caso de incendio, llamar a Bomberos (100). En caso de intoxicación, Centro Toxicológico (0800-222-5462).",
       "props": [
-        "Es líquido",
         "Es inflamable",
         "Es orgánico",
         "Es volátil",
-        "Se utiliza como solvente"
+        "Se utiliza como solvente",
+        "Es soluble en agua"
       ]
     },
     {

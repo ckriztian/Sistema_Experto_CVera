@@ -16,14 +16,19 @@
         <button class="boton" onclick="responder(false)">No</button>
         <button class="boton" style="background:#aaa" onclick="reiniciar()">Reiniciar</button>
         <div class="res" id="resultado"></div>
+
         <div class="historial" id="historial">
             <b>Historial de la consulta</b>
+            <button class="boton" style="padding: 5px 12px; font-size: 0.8em;" onclick="alternarProps()">Ver/ocultar propiedades</button>
             <ul id="historial-lista"></ul>
         </div>
+
         <div class="footer">Tierra del Fuego, Argentina - 2025</div>
     </div>
+
 <script>
 let propActual = "";
+let mostrandoProps = true;
 
 async function cargarPregunta() {
     const res = await fetch("http://localhost:8000/pregunta");
@@ -55,11 +60,22 @@ async function reiniciar() {
     cargarPregunta();
 }
 
+function alternarProps() {
+    mostrandoProps = !mostrandoProps;
+    mostrarHistorial();
+}
+
 async function mostrarHistorial() {
     const res = await fetch("http://localhost:8000/historial");
     const historial = await res.json();
     const ul = document.getElementById("historial-lista");
     ul.innerHTML = "";
+
+    if (!mostrandoProps) {
+        ul.innerHTML = "<li style='color:#aaa;'>(Oculto)</li>";
+        return;
+    }
+
     if (historial.length === 0) {
         ul.innerHTML = "<li style='color:#aaa;'>(Sin historial aún)</li>";
     } else {
@@ -73,5 +89,6 @@ window.onload = cargarPregunta;
 </script>
 </body>
 </html>
+
 
 
