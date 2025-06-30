@@ -86,7 +86,7 @@ class Consulta:
 
                 
 
-# Guardar consulta activa en memoria (para demo simple, 1 usuario a la vez)
+# Guardar consulta activa en memoria
 consulta = Consulta()
 
 @app.get("/pregunta")
@@ -129,3 +129,51 @@ def get_historial():
     """
     return historial
 
+
+
+from pydantic import BaseModel
+
+class NuevoCompuesto(BaseModel):
+    name: str
+    description: str
+    props: list[str]
+
+@app.post("/agregar_compuesto")
+def agregar_compuesto(compuesto: NuevoCompuesto):
+    with open("compuestos.json", encoding="utf-8") as f:
+        data = json.load(f)
+    data["entries"].append(compuesto.dict())
+    with open("compuestos.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    return {"mensaje": "Compuesto agregado exitosamente"}
+
+@app.delete("/eliminar_compuesto")
+def eliminar_compuesto(nombre: str):
+    with open("compuestos.json", encoding="utf-8") as f:
+        data = json.load(f)
+
+    originales = data["entries"]
+    nuevos = [c for c in originales if c["name"].lower() != nombre.lower()]
+
+    if len(nuevos) == len(originales):
+        raise HTTPException(status_code=404, detail="Compuesto no encontrado")
+
+    data["entries"] = nuevos
+    with open("compuestos.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    return {"mensaje": f"Compuesto '{nombre}' eliminado exitosamente"}
+
+@app.put("/modificar_compuesto")
+def modificar_compuesto(compuesto: NuevoCompuesto):
+    with open("compuestos.json", encoding="utf-8") as f:
+        data = json.load(f)
+
+    for i, c in enumerate(data["entries"]):
+        if c["name"].lower() == compuesto.name.lower():
+            data["entries"][i] = compuesto.dict()
+            with open("compuestos.json", "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            return {"mensaje": f"Compuesto '{compuesto.name}' modificado"}
+
+    raise HTTPException(status_code=404, detail="Compuesto no encontrado")

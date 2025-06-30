@@ -21,6 +21,40 @@
             <button class="boton" style="padding: 5px 12px; font-size: 0.8em;" onclick="alternarProps()">Ver/ocultar propiedades</button>
             <ul id="historial-lista"></ul>
         </div>
+
+        <!-- Botón para mostrar la sección de edición avanzada -->
+        <div>
+            <button class="boton" onclick="alternarAvanzado()" style="margin-top:10px;">Ver/ocultar edición avanzada</button>
+        </div>
+
+        <!-- SECCION DE EDICION AVANZADA OCULTA AL INICIO -->
+        <div id="edicion-avanzada" style="display:none; margin-top: 20px;">
+            <div class="formulario-nuevo">
+                <h3>Agregar nuevo compuesto</h3>
+                <input type="text" id="nuevo-nombre" placeholder="Nombre del compuesto">
+                <textarea id="nueva-descripcion" placeholder="Descripción del compuesto"></textarea>
+                <input type="text" id="nuevas-propiedades" placeholder="Propiedades (separadas por coma)">
+                <button class="boton" onclick="agregarCompuesto()">Agregar compuesto</button>
+                <div id="confirmacion-agregar"></div>
+            </div>
+
+            <div class="formulario-nuevo">
+                <h3>Eliminar compuesto</h3>
+                <input type="text" id="eliminar-nombre" placeholder="Nombre exacto del compuesto">
+                <button class="boton" onclick="eliminarCompuesto()">Eliminar compuesto</button>
+                <div id="confirmacion-eliminar"></div>
+            </div>
+
+            <div class="formulario-nuevo">
+                <h3>Modificar compuesto</h3>
+                <input type="text" id="mod-nombre" placeholder="Nombre del compuesto (exacto)">
+                <textarea id="mod-descripcion" placeholder="Nueva descripción"></textarea>
+                <input type="text" id="mod-propiedades" placeholder="Nuevas propiedades (separadas por coma)">
+                <button class="boton" onclick="modificarCompuesto()">Modificar compuesto</button>
+                <div id="confirmacion-modificar"></div>
+            </div>
+        </div>
+
         <div class="footer">Tierra del Fuego, Argentina - 2025</div>
     </div>
 
@@ -83,10 +117,77 @@ async function mostrarHistorial() {
     }
 }
 
+// ----- EDICIÓN AVANZADA (siempre oculta al cargar la página) -----
+function alternarAvanzado() {
+    const seccion = document.getElementById("edicion-avanzada");
+    if (seccion.style.display === "none") {
+        const continuar = confirm("⚠️ Advertencia:\nEstás a punto de acceder a funciones que modifican directamente la base de conocimiento del sistema experto.\n¿Deseas continuar?");
+        if (!continuar) return;
+        seccion.style.display = "block";
+    } else {
+        seccion.style.display = "none";
+    }
+}
+
+async function agregarCompuesto() {
+    const nombre = document.getElementById("nuevo-nombre").value.trim();
+    const descripcion = document.getElementById("nueva-descripcion").value.trim();
+    const propsTexto = document.getElementById("nuevas-propiedades").value.trim();
+    const props = propsTexto.split(",").map(p => p.trim()).filter(p => p);
+
+    if (!nombre || !descripcion || props.length === 0) {
+        document.getElementById("confirmacion-agregar").innerText = "Todos los campos son obligatorios.";
+        return;
+    }
+
+    const res = await fetch("http://localhost:8000/agregar_compuesto", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: nombre, description: descripcion, props: props })
+    });
+
+    if (res.ok) {
+        document.getElementById("confirmacion-agregar").innerText = "✅ Compuesto agregado correctamente.";
+        document.getElementById("nuevo-nombre").value = "";
+        document.getElementById("nueva-descripcion").value = "";
+        document.getElementById("nuevas-propiedades").value = "";
+    } else {
+        document.getElementById("confirmacion-agregar").innerText = "❌ Error al agregar el compuesto.";
+    }
+}
+
+async function eliminarCompuesto() {
+    const nombre = document.getElementById("eliminar-nombre").value.trim();
+    if (!nombre) {
+        document.getElementById("confirmacion-eliminar").innerText = "Debes escribir un nombre.";
+        return;
+    }
+    const res = await fetch("http://localhost:8000/eliminar_compuesto?nombre=" + encodeURIComponent(nombre), { method: "DELETE" });
+    const data = await res.json();
+    document.getElementById("confirmacion-eliminar").innerText = data.mensaje || "Resultado desconocido.";
+}
+
+async function modificarCompuesto() {
+    const nombre = document.getElementById("mod-nombre").value.trim();
+    const descripcion = document.getElementById("mod-descripcion").value.trim();
+    const propsTexto = document.getElementById("mod-propiedades").value.trim();
+    const props = propsTexto.split(",").map(p => p.trim()).filter(p => p);
+
+    if (!nombre || !descripcion || props.length === 0) {
+        document.getElementById("confirmacion-modificar").innerText = "Todos los campos son obligatorios.";
+        return;
+    }
+
+    const res = await fetch("http://localhost:8000/modificar_compuesto", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: nombre, description: descripcion, props: props })
+    });
+    const data = await res.json();
+    document.getElementById("confirmacion-modificar").innerText = data.mensaje || "Resultado desconocido.";
+}
+
 window.onload = cargarPregunta;
 </script>
 </body>
 </html>
-
-
-

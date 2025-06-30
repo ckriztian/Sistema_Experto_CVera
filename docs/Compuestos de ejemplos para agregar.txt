@@ -1,0 +1,34 @@
+1. Triclosán
+Descripción:
+Antibacteriano utilizado en productos de higiene personal (jabones, pastas dentales). Su uso está restringido en algunos países por potenciales efectos tóxicos y persistencia ambiental. Descartar como residuo peligroso. Evitar su vertido en el sistema de aguas residuales.
+
+Propiedades:
+Es sólido, Es orgánico, Es antibacteriano, Es tóxico, Es persistente en el ambiente, Se utiliza en productos de higiene
+
+2. Litio
+Descripción:
+Metal alcalino utilizado en baterías recargables. Reactivo con el agua y el aire. Almacenar bajo aceite mineral. Descartar como residuo peligroso en centros de tratamiento autorizados.
+
+Propiedades:
+Es sólido, Es metal, Es reactivo con agua, Es inflamable, Es inorgánico, Se utiliza en baterías
+
+3. Paracetamol
+Descripción:
+Analgésico y antipirético de uso común. No se considera peligroso en condiciones normales, pero debe descartarse por separado en residuos farmacéuticos. Evitar su acumulación ambiental.
+
+Propiedades:
+Es sólido, Es orgánico, Es fármaco, Es analgésico, Es antipirético, Se utiliza en medicina
+
+4. Cesio-137
+Descripción:
+Isótopo radiactivo utilizado en radioterapia y mediciones industriales. Extremadamente peligroso. Requiere contención blindada y gestión como residuo radiactivo. Ante exposición, contactar al organismo nacional de seguridad nuclear.
+
+Propiedades:
+Es sólido, Es radiactivo, Es tóxico, Es isotopo, Es inorgánico, Se utiliza en medicina nuclear
+
+5. Cafeína
+Descripción:
+Estimulante natural presente en café, té y bebidas energizantes. Su uso es seguro en bajas dosis. Puede causar toxicidad en grandes cantidades. Descartar en residuos comunes si no está mezclada con sustancias peligrosas.
+
+Propiedades:
+Es sólido, Es orgánico, Es estimulante, Es alcaloide, Se utiliza en alimentos, Se encuentra en bebidas
