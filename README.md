@@ -23,6 +23,7 @@ Guiar a los usuarios en la correcta identificación de compuestos químicos y el
 - 🔎 Filtra posibles compuestos de la base de conocimiento.
 - 📝 Una vez identificado, muestra el nombre, procedimiento de descarte y contactos de emergencia.
 - ♻️ Se puede reiniciar la consulta en cualquier momento.
+- 📜 Historial de propiedades respondidas.
 
 ### 🧠 Conocimiento experto
 
