@@ -36,22 +36,25 @@ h1 {
     text-align: center;
     color: #126275;
     font-size: 1.18em;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     font-weight: 500;
 }
 
-.footer {
+.contenedor-footer {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.footer {
     font-size: 0.5em;
-    margin-top: 24px;
-    padding: 5px 20px;    
     color: #126275;
     font-size: 1em;
-    margin-bottom: 5px;
+
 }
 .pregunta {
     font-size: 1.2em;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     color: #0b5b7a;
     font-weight: 600;
     line-height: 1.4;
@@ -60,10 +63,14 @@ h1 {
     text-align: center;
 }
 
+.contenedor-botones {
+    text-align: center;
+}
+
 .boton {
     font-size: 1.06em;
     padding: 10px 32px;
-    margin: 10px 7px 12px 7px;
+    margin: 5px 7px 12px 7px;
     border-radius: 9px;
     border: none;
     background: #4CAF50;

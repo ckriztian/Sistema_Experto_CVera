@@ -10,21 +10,25 @@
     <img src="img/logo_politecnicol.png" class="logo" alt="Logo Politécnico Malvinas Argentinas">
     <div class="card">
         <h1>Sistema Experto Químico</h1>
-        <div class="subtitulo">Desarrollado por Cristian Vera</div>
+        <div class="subtitulo">💭 Tu compuesto...</div>
         <div class="pregunta" id="pregunta"></div>
-        <button class="boton" onclick="responder(true)">Sí</button>
-        <button class="boton" onclick="responder(false)">No</button>
-        <button class="boton" style="background:#aaa" onclick="reiniciar()">Reiniciar</button>
+        <div class="contenedor-botones">
+            <button class="boton" onclick="responder(true)">Sí</button>
+            <button class="boton" onclick="responder(false)">No</button>
+            <button class="boton" style="background:#6e6c6c" onclick="reiniciar()">Reiniciar</button>
+        </div>
         <div class="res" id="resultado"></div>
         <div class="historial" id="historial">
             <b>Historial de la consulta</b>
-            <button class="boton" style="padding: 5px 12px; font-size: 0.8em;" onclick="alternarProps()">Ver/ocultar propiedades</button>
+            <button class="boton" style="padding: 5px 12px; font-size: 0.8em; margin-left: 20px;" onclick="alternarProps()">👁️ Ver/ocultar propiedades</button>
             <ul id="historial-lista"></ul>
         </div>
 
+        <div class="contenedor-botones">
         <!-- Botón para mostrar la sección de edición avanzada -->
-        <div>
-            <button class="boton" onclick="alternarAvanzado()" style="margin-top:10px;">Ver/ocultar edición avanzada</button>
+            <div>
+                <button class="boton" onclick="alternarAvanzado()" style="margin-top:20px; text-align: center;">⚠️ Ver/ocultar edición avanzada</button>
+            </div>
         </div>
 
         <!-- SECCION DE EDICION AVANZADA OCULTA AL INICIO -->
@@ -54,8 +58,10 @@
                 <div id="confirmacion-modificar"></div>
             </div>
         </div>
-
-        <div class="footer">Tierra del Fuego, Argentina - 2025</div>
+        <div class="contenedor-footer">
+            <div class="footer">Desarrollado por Cristian Vera</div>
+            <div class="footer">Tierra del Fuego, Argentina - 2025</div>
+        </div>
     </div>
 
 <script>
