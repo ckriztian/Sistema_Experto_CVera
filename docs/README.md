@@ -1,10 +1,11 @@
-## ⚗️🚦 Instrucciones para Ejecutar la API del Sistema Experto Químico
+
+# ⚗️🚦 Instrucciones para Ejecutar la API del Sistema Experto Químico
 
 Este repositorio contiene la API backend del Sistema Experto para identificación y descarte seguro de compuestos químicos en laboratorios.
 
 ---
 
-### 🧰 Requisitos
+## 🧰 Requisitos
 
 - **Python 3.8+**
 - **pip** (gestor de paquetes de Python)
@@ -12,7 +13,7 @@ Este repositorio contiene la API backend del Sistema Experto para identificació
 
 ---
 
-### 📦 Instalación de dependencias
+## 📦 Instalación de dependencias
 
 Desde la terminal, navega a la carpeta del proyecto y ejecuta:
 
@@ -32,16 +33,17 @@ source venv/bin/activate
 
 ---
 
-### 📁 Archivos principales
+## 📁 Archivos principales
 
 - **app.py** – Archivo principal con la API FastAPI.
+- **engine.py** - Motor del sistema experto.
 - **compuestos.json** – Base de conocimiento de compuestos.
 - **index.html** – Interfaz web (opcional).
 - **style.css** – Hoja de estilos (opcional).
 
 ---
 
-### 🚀 Ejecución de la API
+## 🚀 Ejecución de la API
 
 1. **Asegúrate de estar en el directorio correcto y tener las dependencias instaladas.**
 2. Ejecuta el siguiente comando en la terminal:
@@ -50,11 +52,11 @@ source venv/bin/activate
 uvicorn app:app --reload
 ```
 
-Esto iniciará el servidor en modo desarrollo.
+Esto iniciará el servidor en modo desarrollo en `http://localhost:8000/`.
 
 ---
 
-### 🌐 Acceso a la API
+## 🌐 Acceso a la API
 
 - **Documentación interactiva (Swagger UI):**
   - [http://localhost:8000/docs](http://localhost:8000/docs)
@@ -69,24 +71,39 @@ Esto iniciará el servidor en modo desarrollo.
 - **Ver historial de la consulta:**
   - `GET http://localhost:8000/historial`
 
+> **Nota:** La API y el frontend (`index.html`) deben ejecutarse en la misma máquina o red local para evitar problemas de acceso o CORS.
+
 ---
 
-### 💻 Uso con la interfaz web
+## 💻 Uso con la interfaz web
 
-1. Abre `index.html` en tu navegador preferido.
+1. Abre `index.html` en tu navegador preferido (recomendado: Chrome, Firefox).
 2. Asegúrate de que la API esté corriendo en `localhost:8000`.
 3. Responde las preguntas y consulta el resultado.
 
 ---
 
-### ℹ️ Notas
+## 📖 Ejemplo de flujo de consulta
 
-- Si cambias la base de conocimiento (`compuestos.json`), reinicia el servidor para recargar datos.
-- Puedes modificar `style.css` o las imágenes para personalizar la interfaz.
+1. El sistema pregunta: `¿Es sólido?`
+2. Usuario responde `Sí`.
+3. El sistema pregunta: `¿Es sal?`
+4. Usuario responde `No`.
+5. El sistema pregunta: `¿Es metal?`
+6. Usuario responde `Sí`.
+7. El sistema muestra el compuesto identificado y la recomendación de descarte.
 
 ---
 
-### 🆘 Soporte
+## ℹ️ Notas
+
+- Si cambias la base de conocimiento (`compuestos.json`), reinicia el servidor para recargar datos.
+- Puedes modificar `style.css` o las imágenes para personalizar la interfaz.
+- Si el navegador bloquea solicitudes a la API por CORS, revisa la configuración de `CORSMiddleware` en `app.py` (ya incluido por defecto).
+
+---
+
+## 🆘 Soporte
 
 Para dudas o sugerencias, contacta a Cristian Vera.
 
