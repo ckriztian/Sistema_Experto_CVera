@@ -21,6 +21,7 @@
         "Es ácido",
         "Es tóxico",
         "Es corrosivo",
+        "Es oxidante",
         "Produce vapores irritantes",
         "Es inorgánico",
         "Es reactivo con metales",
@@ -120,20 +121,6 @@
         "Es tóxico",
         "Es orgánico",
         "Es cancerígeno"
-      ]
-    },
-    {
-      "name": "Ácido clorhídrico",
-      "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
-      "props": [
-        "Es sólido",
-        "Es ácido",
-        "Es corrosivo",
-        "Es tóxico",
-        "Produce vapores irritantes",
-        "Es inorgánico",
-        "Es reactivo con metales",
-        "Es soluble en agua"
       ]
     },
     {
@@ -556,6 +543,21 @@
         "Se utiliza en alimentos",
         "Es carbohidrato",
         "Es biodegradable"
+      ]
+    },
+    {
+      "name": "Ácido clorhídrico",
+      "description": "Descartar en envase resistente y etiquetado. Llevar al repositorio de residuos peligrosos. En caso de accidente o derrame, contactar a materiales peligrosos (103) o al Centro Toxicológico (0800-222-5462).",
+      "props": [
+        "Es líquido",
+        "Es ácido",
+        "Es corrosivo",
+        "Es tóxico",
+        "Es volátil",
+        "Produce vapores irritantes",
+        "Es inorgánico",
+        "Es reactivo con metales",
+        "Es soluble en agua"
       ]
     }
   ]
