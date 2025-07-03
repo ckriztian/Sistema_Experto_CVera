@@ -1,9 +1,8 @@
 ![Sistema_Experto_TDF](/img/banner_pma.jpg)
+![Visitas](https://visitor-badge.laobi.icu/badge?page_id=ckriztian.Sistema_Experto_CVera&left_color=gray&right_color=blue)
 
 ### 🧪💚 Sistema Experto de Identificación y Descarte Seguro de Compuestos Químicos en Laboratorio  
 #### 🌎 Provincia de Tierra del Fuego, Argentina
-
-![Visitas](https://visitor-badge.laobi.icu/badge?page_id=ckriztian.Sistema_Experto_CVera&left_color=gray&right_color=blue)
 
 ---
 📚 **Materia:** Desarrollo de Sistemas de Inteligencia Artificial  
