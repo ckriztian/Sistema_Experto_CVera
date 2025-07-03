@@ -13,4 +13,4 @@ Puedes ver el video de las siguientes maneras:
 * **Localmente:**  
   💾 Si has descargado este repositorio, puedes encontrar el archivo  
   `Sistema_Experto_Qco-Cristian_Vera.mp4` en esta misma carpeta y reproducirlo con tu reproductor de video preferido.  
-  (Video comprimido de BAJA calidad.)
+  (Video comprimido a través de Clideo.com)
