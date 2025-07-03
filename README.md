@@ -61,7 +61,7 @@ ___
 ├── /README.md          # Descripción general del sistema
 ├── /app.py             # API principal FastAPI (backend)
 ├── /compuestos.json    # Base de conocimiento 
-├── /engine.py          # Motor de inferencia del sistema experto.
+├── /engine.py          # Motor de inferencia del sistema experto
 ├── /index.html         # Interfaz web del usuario
 ```
 ---
