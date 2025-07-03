@@ -7,7 +7,7 @@ Este video presenta una demostración y construcción del **Sistema Experto Quí
 Puedes ver el video de las siguientes maneras:
 
 * **En línea:**  
-  ▶️ [Ver el video en línea](https://www.youtube.com/watch?v=HB0SAAyFFP4&t=98s)  
+  ▶️ [Ver el video en línea](https://www.youtube.com/)  
   (Video con BUENA calidad.)
 
 * **Localmente:**  

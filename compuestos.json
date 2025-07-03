@@ -434,6 +434,7 @@
       "props": [
         "Es sólido",
         "Es sal",
+        "Es base",
         "Tiene propiedades detergentes",
         "Es soluble en agua",
         "Es inorgánico"
@@ -465,7 +466,9 @@
       "props": [
         "Es gas",
         "Es tóxico",
+        "Es inflamable",
         "Es cancerígeno",
+        "Es volátil",
         "Produce vapores irritantes",
         "Es orgánico"
       ]
